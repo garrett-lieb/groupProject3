@@ -19,22 +19,27 @@ const Root = () => {
                 <ul className="dropBar">
                     <li>
                         <Link className="navItem" to="/">
-                            About
+                            UserPortal
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/projects">
-                            Projects
+                        <Link className="navItem" to="/One">
+                            One
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/contact">
-                            Contact
+                        <Link className="navItem" to="/Two">
+                            Two
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/resume">
-                            Resume
+                        <Link className="navItem" to="/Three">
+                            Three
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="navItem" to="/Four">
+                            Four
                         </Link>
                     </li>
                 </ul>
