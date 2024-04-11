@@ -11,29 +11,66 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: rgb(168, 4, 4);
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding-top: 0;
+  box-sizing: border-box;
+  align-items: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  padding: 1rem;
+  font-size: 3em;
+  background-image: 
+  linear-gradient(to right, rgb(0, 133, 145), rgb(0, 183, 200), rgb(0, 179, 176));
+  border: 10px solid;
+  border-radius: 5rem;
+  border-color: cadetblue;
+  box-shadow: 25px 0px 15px 5px rgb(47, 236, 253);
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143));
+  border-style: double;
+  border-width: 0.5rem;
+  border-radius: 1rem;
+  border-color: aliceblue;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+h4 {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  border: .5rem double;
+  border-radius: 1rem;
+  border-color: #646cff;
+  color: black;
+  background-color: aliceblue;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: black;
+  background-color: aliceblue;
 }
 
 button {
@@ -55,6 +92,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -65,5 +103,26 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media screen and (max-width: 840px) {
+  body {
+    display: flex;
+    align-items: center;
+  }
+  h3 {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  body {
+    display: table-column
+  }
+  h3 {
+    text-align: center;
   }
 }
