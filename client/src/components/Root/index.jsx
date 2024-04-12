@@ -39,6 +39,16 @@ const Root = () => {
                             Six
                         </Link>
                     </li>
+                    <li>
+                        <Link className="navItem" to="/Price">
+                            Request Price
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="navItem" to="/Pickup">
+                            Request Pickup
+                        </Link>
+                    </li>
                 </ul>
             
   
