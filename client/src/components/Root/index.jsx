@@ -4,19 +4,11 @@ import "./nav.css"
 import { useState } from 'react';
 
 const Root = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
 
     return (
         <div className="menu">
-            <button className="menuButton" onClick={toggleMenu}>
-                Menu
-            </button>
   
-            {isMenuOpen && (
-                <ul className="dropBar">
+                <ul className="navBar">
                     <li>
                         <Link className="navItem" to="/">
                             UserPortal
@@ -37,8 +29,18 @@ const Root = () => {
                             Four
                         </Link>
                     </li>
+                    <li>
+                        <Link className="navItem" to="/Five">
+                            Five
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className="navItem" to="/Six">
+                            Six
+                        </Link>
+                    </li>
                 </ul>
-            )}
+            
   
             <Outlet />
         </div>
