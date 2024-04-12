@@ -23,11 +23,6 @@ const Root = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/One">
-                            One
-                        </Link>
-                    </li>
-                    <li>
                         <Link className="navItem" to="/Two">
                             Two
                         </Link>
