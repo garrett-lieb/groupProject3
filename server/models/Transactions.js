@@ -1,18 +1,28 @@
 const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const thoughtSchema = new Schema({
-  thoughtText: {
-    type: String,
-    required: 'You need to leave a thought!',
-    minlength: 1,
-    maxlength: 280,
-    trim: true,
+const transactionSchema = new Schema({
+  transaction: {
+    type: Image,
+    required: true,
+    id: true,
   },
-  thoughtAuthor: {
+  quantitySold: {
+    type: int,
+    required: true,
+   
+  },
+  transactionTotal: {
+    type: float,
+    required: true,
+    _id: true,
+  },
+  
+  paymentType: {
     type: String,
     required: true,
     trim: true,
+    _id: true,
   },
   createdAt: {
     type: Date,
@@ -27,15 +37,11 @@ const thoughtSchema = new Schema({
         minlength: 1,
         maxlength: 280,
       },
-      createdAt: {
-        type: Date,
-        default: Date.now,
-        get: (timestamp) => dateFormat(timestamp),
-      },
+     
     },
   ],
 });
 
-const Thought = model('Thought', thoughtSchema);
+const Transactions = model('Transactions', transactionSchema);
 
-module.exports = Thought;
+module.exports = Transactions;

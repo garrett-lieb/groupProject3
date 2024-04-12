@@ -1,3 +1,6 @@
-const Thought = require('./Thought');
+const Payments = require('./Payments');
+const Payments = require('./Payments');
+const Transactions = require('./Transactions');
+const Users = require('./Users');
 
-module.exports = { Thought };
+module.exports = { Payments, Transactions, Users};
