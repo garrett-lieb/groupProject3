@@ -13,8 +13,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root/>}>
       <Route index element={<userPortal />} />
       <Route path="/Two" element={<Two />} />
-      <Route path="/Three" element={<Three />} />
-      <Route path="/Four" element={<Four />} />
       <Route path="/Pickup" element={<Pickup />} />
       <Route path="/Price" element={<Price />} />
     
