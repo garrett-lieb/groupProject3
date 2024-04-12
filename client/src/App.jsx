@@ -1,9 +1,9 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom"
 import Root from "./components/Root"
-import LoginPage from "./components/LoginPage"
-import Pickup from "./components/Pickup"
-import Price from "./components/Price"
-import Footer from "./components/Footer"
+import LoginPage from "./components/LoginPage/login"
+import Pickup from "./components/Pickup/pickup"
+import Price from "./components/Price/price"
+import Footer from "./components/Footer/footer"
 
 function App() {
 const router = createBrowserRouter(
