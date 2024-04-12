@@ -1,0 +1,35 @@
+// import React from 'react'
+// import { Link } from 'react-router-dom'
+
+import '../LoginPage/loginpage.css'
+
+export default function SignInPage() {
+    return (
+        <div>
+            <img></img>
+            <h2>
+                Authentication Required
+            </h2>
+            <form>
+             <p>
+                <label>
+                    Username
+                </label>
+                <input type='text' name='username' required />
+            </p>
+            <p>
+            <label>
+                    Password
+                </label>
+                <input type='password' name='password' required /> 
+            </p>
+            <p>
+                <button id='login_button' type='submit'>
+                    Login
+                </button>
+            </p>   
+            </form>
+            
+        </div>
+    )
+}
