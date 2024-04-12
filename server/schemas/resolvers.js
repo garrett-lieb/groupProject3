@@ -1,4 +1,4 @@
-const { Thought } = require('../models');
+const { Payments, PickUpDates, Transactions } = require('../models');
 
 const resolvers = {
   Query: {
