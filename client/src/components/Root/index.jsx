@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, Outlet} from 'react-router-dom'
 import "./nav.css"
-import { useState } from 'react';
+// import { useState } from 'react';
 
 const Root = () => {
 
@@ -11,12 +11,12 @@ const Root = () => {
                 <ul className="navBar">
                     <li>
                         <Link className="navItem" to="/">
-                            UserPortal
+                            Login
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/Two">
-                            Two
+                        <Link className="navItem" to="/">
+                            User Portal
                         </Link>
                     </li>
                     <li>
