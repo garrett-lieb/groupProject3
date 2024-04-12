@@ -10,7 +10,7 @@ const Root = () => {
     };
 
     return (
-        <div class="menu">
+        <div className="menu">
             <button className="menuButton" onClick={toggleMenu}>
                 Menu
             </button>
