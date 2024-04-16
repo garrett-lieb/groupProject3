@@ -3,7 +3,8 @@ const dateFormat = require('../utils/dateFormat');
 
 const paymentSchema = new Schema({
   paymentAmount: {
-    type: float,
+    type: Number,
+    float: true,
     required: true,
     id: true,
   },
@@ -34,6 +35,6 @@ const paymentSchema = new Schema({
   ],
 });
 
-const Payments = model('Payments', thoughtSchema);
+const Payments = model('Payments', paymentSchema);
 
 module.exports = Payments;

@@ -1,23 +1,39 @@
-const { Thought } = require('../models');
+const { Payments, PickUpDates, Transactions } = require('../models');
 
 const resolvers = {
   Query: {
-    thoughts: async () => {
-      return Thought.find();
+    payments: async () => {
+      return Payments.find();
     },
-
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    payment: async (parent, { paymentId }) => {
+      return Payments.findOne({ _id: paymentId });
+    },
+    pickUpDates: async () => {
+      return PickUpDates.find();
+    },
+    pickUpDate: async (parent, { pickUpDateId }) => {
+      return PickUpDates.findOne({ _id: pickUpDateId });
+    },
+    transactions: async () => {
+      return Transactions.find();
+    },
+    transaction: async (parent, { transactionId }) => {
+      return Transactions.findOne({_id: transactionId });
     },
   },
-
   Mutation: {
-    addThought: async (parent, { thoughtText, thoughtAuthor }) => {
-      return Thought.create({ thoughtText, thoughtAuthor });
+    addPayment: async (parent, { paymentText, paymentAuthor }) => {
+      return Payments.create({ paymentText, paymentAuthor });
     },
-    addComment: async (parent, { thoughtId, commentText }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
+    addPickUpDate: async (parent, { pickUpDateText, pickUpDateAuthor }) => {
+      return PickUpDates.create({ pickUpDateText, pickUpDateAuthor });
+    },
+    addTransaction: async (parent, { transactionText, transactionAuthor }) => {
+      return Transactions.create({ transactionText, transactionAuthor });
+    },
+    addComment: async (parent, {paymentId, commentText }) => {
+      return Payments.findOneAndUpdate(
+        {_id: paymentId },
         {
           $addToSet: { comments: { commentText } },
         },
@@ -27,16 +43,21 @@ const resolvers = {
         }
       );
     },
-    removeThought: async (parent, { thoughtId }) => {
-      return Thought.findOneAndDelete({ _id: thoughtId });
+    removePayment: async (parent, { paymentId }) => {
+      return Payments.findOneAndDelete({ _id: paymentId });
     },
-    removeComment: async (parent, { thoughtId, commentId }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
-        { $pull: { comments: { _id: commentId } } },
-        { new: true }
-      );
+    removePickUpDate: async (parent, { pickUpDateId }) => {
+      return PickUpDates.findOneAndDelete({ _id: pickUpDateId });
     },
+    removeTransaction: async (parent, { transactionId }) => {
+      return Transactions.findOneAndDelete({ _id: transactionId });
+    },
+    removeComment: async (parent, { paymentId, commentId }) => {
+      return Payments.findOneAndUpdate(
+        { _id: paymentId },
+        { $pull: { comments: { _id: commentId }}},
+      )
+    }
   },
 };
 

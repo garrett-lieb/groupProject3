@@ -1,19 +1,17 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom"
 import Root from "./components/Root"
-import userPortal from "./components/userPortal"
-import Two from "./components/Two"
-import Three from "./components/Three"
-import Four from "./components/Four"
-import Footer from "./components/Footer"
+import LoginPage from "./components/LoginPage/login"
+import Pickup from "./components/Pickup/pickup"
+import Price from "./components/Price/price"
+import Footer from "./components/Footer/footer"
 
 function App() {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root/>}>
-      <Route index element={<userPortal />} />
-      <Route path="/Two" element={<Two />} />
-      <Route path="/Three" element={<Three />} />
-      <Route path="/Four" element={<Four />} />
+      <Route index element={<LoginPage />} />
+      <Route path="/Pickup" element={<Pickup />} />
+      <Route path="/Price" element={<Price />} />
     
     </Route>
   )
@@ -27,3 +25,4 @@ const router = createBrowserRouter(
 }
 
 export default App
+
