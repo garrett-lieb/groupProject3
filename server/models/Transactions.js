@@ -3,17 +3,19 @@ const dateFormat = require('../utils/dateFormat');
 
 const transactionSchema = new Schema({
   transaction: {
-    type: Image,
+    type: String,
     required: true,
     id: true,
   },
   quantitySold: {
-    type: int,
+    // whole number
+    type: Number,
+    integer: true,
     required: true,
    
   },
   transactionTotal: {
-    type: float,
+    type: Number,
     required: true,
     _id: true,
   },

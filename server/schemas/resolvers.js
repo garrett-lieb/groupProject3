@@ -34,10 +34,10 @@ const resolvers = {
     addComment: async (parent, {paymentId, commentText }) => {
       return Payments.findOneAndUpdate(
         {_id: paymentId },
-      {
-        $addToSet; { comments: { commentText } },
-      },
-    {
+        {
+          $addToSet: { comments: { commentText } },
+        },
+        {
           new: true,
           runValidators: true,
         }
@@ -57,8 +57,7 @@ const resolvers = {
         { _id: paymentId },
         { $pull: { comments: { _id: commentId }}},
       )
-    };
-    },
+    }
   },
 };
 

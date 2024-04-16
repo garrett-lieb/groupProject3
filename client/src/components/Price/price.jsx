@@ -4,7 +4,6 @@ import './price.css'
 const Price = () => {
     return (
       <div className="price">
-  
       </div>
     )
   }
