@@ -5,3 +5,8 @@ div {
     font-family: 'Roboto', sans-serif;
     background: #f9f9f9;
 }
+
+.container form {
+    display: flex;
+    flex-direction: column;
+}

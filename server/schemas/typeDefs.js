@@ -9,7 +9,7 @@ const typeDefs = `
   }
   type Mutation {
     addPayment(paymentAmount: Float!, paymentType: String!): Payment
-    addPickUpDate(pickUpDate: String!): PickUpDate
+    addPickUpDate(Date: String!, Time: String!, Location: String!, Notes: String!): PickUpDate
     addTransaction(transaction: String!, quantitySold: Int!, transactionTotal: Float!, paymentType: String!): Transaction
     addpayment(paymentId: ID!, paymentText: String!): Payment
     removePayment(paymentId: ID!): Payment
