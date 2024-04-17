@@ -23,19 +23,18 @@ const pickupsSchema = new Schema({
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
     },
-  comments: [
-    {
-      commentText: {
+   
+    
+      Notes: {
         type: String,
         required: true,
         minlength: 1,
         maxlength: 280,
       },
      
-    },
-  ],
+    
 });
 
-const Pickups = model('Pickups', picukpsSchema);
+const Pickups = model('Pickups', pickupsSchema);
 
 module.exports = Pickups;
