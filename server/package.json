@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "watch": "nodemon",
-    "seed": "node seeders/seed.jjsons"
+    "seed": "node seeders/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,10 @@
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "graphql": "^16.6.0",
-    "mongoose": "^7.0.2"
+    "mongoose": "^7.0.2",
+    "react-datepicker": "^6.8.0",
+    "react-router-dom": "^6.22.3",
+    "react-time-picker": "^6.6.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
