@@ -1,4 +1,4 @@
-const { Payments, PickUpDates, Transactions } = require('../models');
+const { Payments, Pickups, Transactions } = require('../models');
 
 const resolvers = {
   Query: {
@@ -9,10 +9,10 @@ const resolvers = {
       return Payments.findOne({ _id: paymentId });
     },
     pickUpDates: async () => {
-      return PickUpDates.find();
+      return Pickups.find();
     },
     pickUpDate: async (parent, { pickUpDateId }) => {
-      return PickUpDates.findOne({ _id: pickUpDateId });
+      return Pickups.findOne({ _id: pickUpDateId });
     },
     transactions: async () => {
       return Transactions.find();
@@ -25,9 +25,12 @@ const resolvers = {
     addPayment: async (parent, { paymentText, paymentAuthor }) => {
       return Payments.create({ paymentText, paymentAuthor });
     },
-    addPickUpDate: async (parent, { pickUpDateText, pickUpDateAuthor }) => {
-      return PickUpDates.create({ pickUpDateText, pickUpDateAuthor });
+    addPickUpDate: async (parent, { Date, Time, Location, Notes }) => {
+      return Pickups.create({Date, Time, Location, Notes });
     },
+    // addPickUpDate: async (parent, { pickUpDateText, pickUpDateAuthor }) => {
+    //   return Pickups.create({ pickUpDateText, pickUpDateAuthor });
+    // },
     addTransaction: async (parent, { transactionText, transactionAuthor }) => {
       return Transactions.create({ transactionText, transactionAuthor });
     },
@@ -47,7 +50,7 @@ const resolvers = {
       return Payments.findOneAndDelete({ _id: paymentId });
     },
     removePickUpDate: async (parent, { pickUpDateId }) => {
-      return PickUpDates.findOneAndDelete({ _id: pickUpDateId });
+      return Pickups.findOneAndDelete({ _id: pickUpDateId });
     },
     removeTransaction: async (parent, { transactionId }) => {
       return Transactions.findOneAndDelete({ _id: transactionId });
