@@ -1,4 +1,6 @@
 ul{
+    margin: 20px 20px 40px 20px;
+    padding: 1px 1px 1px 1px;
     display: inline-block;
     list-style: none;  
     justify-content: center;
@@ -30,7 +32,7 @@ ul li:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1); */
 }
 
 .navItem {
