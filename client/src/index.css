@@ -27,11 +27,9 @@ h1 {
   line-height: 1.1;
   padding: 1rem;
   font-size: 3em;
-  background-image: 
-  linear-gradient(to right, rgb(0, 133, 145), rgb(0, 183, 200), rgb(0, 179, 176));
   border: 10px solid;
   border-radius: 5rem;
-  border-color: cadetblue;
+  border-color: #59b2dc;
   box-shadow: 25px 0px 15px 5px #7B8585;
   color: rgb(255, 255, 255);
 }
@@ -39,11 +37,10 @@ h1 {
 h2 {
   padding: 2rem;
   font-size: 1.5rem;
-  background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143));
   border-style: double;
   border-width: 0.5rem;
   border-radius: 1rem;
-  border-color: aliceblue;
+
 }
 
 h3 {
@@ -59,14 +56,13 @@ h4 {
   border-radius: 1rem;
   border-color: #1290cb;
   color: black;
-  background-color: aliceblue;
 }
 
 p {
+  background-color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.1;
   color: black;
-  background-color: aliceblue;
 }
 
 button {
