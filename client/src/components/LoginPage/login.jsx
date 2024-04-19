@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './login.css'
+import './login.css';
 
 
 
@@ -37,4 +37,4 @@ const LoginPage = () =>  {
     )
 }
 
-export default LoginPage
+export default LoginPage;
