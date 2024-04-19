@@ -1,14 +1,12 @@
 :root {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  line-height: 1.75;
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -29,11 +27,9 @@ h1 {
   line-height: 1.1;
   padding: 1rem;
   font-size: 3em;
-  background-image: 
-  linear-gradient(to right, rgb(0, 133, 145), rgb(0, 183, 200), rgb(0, 179, 176));
   border: 10px solid;
   border-radius: 5rem;
-  border-color: cadetblue;
+  border-color: #59b2dc;
   box-shadow: 25px 0px 15px 5px #7B8585;
   color: rgb(255, 255, 255);
 }
@@ -41,11 +37,10 @@ h1 {
 h2 {
   padding: 2rem;
   font-size: 1.5rem;
-  background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143));
   border-style: double;
   border-width: 0.5rem;
   border-radius: 1rem;
-  border-color: aliceblue;
+
 }
 
 h3 {
@@ -59,16 +54,15 @@ h4 {
   line-height: 1.1;
   border: .5rem double;
   border-radius: 1rem;
-  border-color: #646cff;
+  border-color: #1290cb;
   color: black;
-  background-color: aliceblue;
 }
 
 p {
+  background-color: #ffffff;
   font-size: 1.2rem;
   line-height: 1.1;
   color: black;
-  background-color: aliceblue;
 }
 
 button {
@@ -78,18 +72,23 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: black;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: 0.25s;
 }
 
 button:hover {
-  border-color: #646cff;
+  background-color: #1290cb;
+  color: #ffffff;
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+textarea {
+  background-color: #f9f9f9;
 }
 
 
@@ -99,7 +98,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #1290cb;
   }
   button {
     background-color: #f9f9f9;

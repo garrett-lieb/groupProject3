@@ -1,17 +1,12 @@
-
-import './pickup.css'
-
-import TimePicker from 'react-time-picker';
-
-import React, { useState } from "react";
-import DatePicker from "react-datepicker";
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
 import './TimePicker.css';
-import 'react-clock/dist/Clock.css';
-
-import "react-datepicker/dist/react-datepicker.css";
-
+import './pickup.css'
+import TimePicker from 'react-time-picker';
+// import 'react-clock/dist/Clock.css';
+// import "react-datepicker/dist/react-datepicker.css";
 // CSS Modules, react-datepicker-cssmodules.css
-import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 
 
@@ -31,8 +26,6 @@ const Pickup = () => {
 
     const location = document.getElementById('location').value;
     const notes = document.getElementById('notes').value;
-
-    console.log("Hello");
 
     setFormData({
       Date: startDate,

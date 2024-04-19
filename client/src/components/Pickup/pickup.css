@@ -1,12 +1,13 @@
-div {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background: #f9f9f9;
+.container {
+    margin: 10px;
 }
 
 .container form {
-    display: flex;
+    display: inline-flex;
+    margin: 13px;
     flex-direction: column;
-}
+    color: black;
+    font-weight: bold;
+  }
+
+

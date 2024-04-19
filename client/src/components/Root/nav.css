@@ -1,24 +1,22 @@
 ul{
     display: inline-block;
-    list-style:none;  
+    list-style: none;  
+    justify-content: center;
 }
 
 ul li {
     background-color:#eeee;
     border: 1px solid #000000;
-    border-radius: 3px;
+    border-radius: 4px;
     color:#7B8585;
     display: inline-block;
     font-size: 16px;
     padding: 10px 10px;
-    justify-content: space-between;
-
 }
 
 ul li:hover {
     background-color: #A0D2E9;
     cursor: pointer;
-    padding: 10px 20px;
     transition: 0.5s;
 }
 
@@ -28,11 +26,10 @@ ul li:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 
