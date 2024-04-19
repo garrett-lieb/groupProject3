@@ -1,11 +1,12 @@
-import React from 'react'
-import './price.css'
+import React from 'react';
+import './price.css';
 
 const Price = () => {
     return (
       <div className="price">
+        <p>hello</p>
       </div>
     )
   }
   
-  export default Price
+  export default Price;

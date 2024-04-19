@@ -15,7 +15,7 @@ const Root = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link className="navItem" to="/">
+                        <Link className="navItem" to="/UserPortal">
                             User Portal
                         </Link>
                     </li>
