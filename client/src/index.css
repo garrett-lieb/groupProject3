@@ -7,10 +7,14 @@
   background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   align-items: center;
+  background-image: 
+  linear-gradient(to right, rgb(0, 133, 145), rgb(0, 183, 200), rgb(0, 179, 176));
   box-sizing: border-box;
   margin: 0;
   padding-top: 0;
@@ -37,6 +41,7 @@ h1 {
 h2 {
   padding: 2rem;
   font-size: 1.5rem;
+  background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143));
   border-style: double;
   border-width: 0.5rem;
   border-radius: 1rem;
