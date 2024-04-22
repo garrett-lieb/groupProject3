@@ -75,7 +75,7 @@ margin-top: 10px;
 }
 
 .react-time-picker__inputGroup__input--hasLeadingZero {
-  margin-left: -0.54em;
+  margin-left: -0.54em; 
   padding-left: calc(1px + 0.54em);
 }
 

@@ -8,21 +8,21 @@ import './login.css';
 
 const LoginPage = () =>  {
     return (
-        <div>
-            <img></img>
+        <div className='loginBody'>
+            {/* <img></img> */}
             <h2>
                 Authentication Required
             </h2>
             <form>
              <p>
                 <label>
-                    Username
+                    Username:
                 </label>
                 <input type='text' name='username' required />
             </p>
             <p>
             <label>
-                    Password
+                    Password:
                 </label>
                 <input type='password' name='password' required /> 
             </p>
