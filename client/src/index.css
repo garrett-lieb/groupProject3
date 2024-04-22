@@ -1,26 +1,19 @@
 :root {
   --primary: #1290cb;
   --secondary: #59b2dc;
-  --tertiary: #CFEAF5;
---greyfont: #898989;
+  --tertiary: #cfeaf5;
+  --greyfont: #898989;
 }
 
-
 body {
-  /* align-items: center; */
-  /* background-image:  */
-  /* linear-gradient(to right, rgb(0, 133, 145), rgb(0, 183, 200), rgb(0, 179, 176)); */
-  /* box-sizing: border-box; */
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding-top: 0;
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
 }
 
 /* a {
   font-weight: 500;
   text-decoration: inherit;
 } */
-
 
 /* h1 {
   font-size: 3.2em;
@@ -37,9 +30,9 @@ body {
 /* h2 {
   padding: 2rem;
   font-size: 1.5rem; */
-  /* background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143)); */
-  /* border-style: double; */
-  /* border-width: 0.5rem;
+/* background-image: linear-gradient( rgb(0, 179, 196), rgb(66, 115, 143)); */
+/* border-style: double; */
+/* border-width: 0.5rem;
   border-radius: 1rem;
 
 } */
@@ -78,23 +71,14 @@ p {
   transition: 0.25s;
 } */
 
-
-
-
 /* 
 textarea {
   background-color: #f9f9f9;
   color: black;
 } */
 
-
-
-
-
 @media only screen and (max-width: 720px) {
   body {
     display: flex;
   }
-
 }
-
