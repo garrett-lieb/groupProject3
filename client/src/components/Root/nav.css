@@ -1,3 +1,18 @@
+/* :root {
+    --primary: #1290cb;
+    --secondary: #59b2dc;
+    --tertiary: #CFEAF5;
+  --greyfont: #898989;
+  } */
+
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    
+}
+
 ul{
     margin: 20px 20px 40px 20px;
     padding: 1px 1px 1px 1px;
@@ -21,6 +36,7 @@ ul li:hover {
     cursor: pointer;
     transition: 0.5s;
 }
+
 
 .menu{
     background-color: #ffff;
